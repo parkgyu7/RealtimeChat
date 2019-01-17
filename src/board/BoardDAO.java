@@ -254,7 +254,7 @@ DataSource dataSource;
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs =null;
-		String SQL = "SELECT * FROM BOARD WHERE baordGroup >= ?";
+		String SQL = "SELECT * FROM BOARD WHERE boardGroup >= ?";
 		try {
 			conn = dataSource.getConnection();
 			pstmt = conn.prepareStatement(SQL);
@@ -280,7 +280,7 @@ DataSource dataSource;
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs =null;
-		String SQL = "SELECT COUNT(boardGroup) FROM BOARD WHERE baordGroup >= ?";
+		String SQL = "SELECT COUNT(boardGroup) FROM BOARD WHERE boardGroup >= ?";
 		try {
 			conn = dataSource.getConnection();
 			pstmt = conn.prepareStatement(SQL);

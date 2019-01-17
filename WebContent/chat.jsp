@@ -156,7 +156,7 @@
 			}
 			$('#chatList').scrollTop($('#chatList')[0].scrollHeight);
 		}
-		function getInfiniteChat(){	// '1000'(1초)간격으로 채팅이 왔는지 확인 함수
+		function getInfiniteChat(){	// '3000'(3초)간격으로 채팅이 왔는지 확인 함수
 			setInterval(function(){
 				chatListFunction(lastID);
 			}, 3000);
